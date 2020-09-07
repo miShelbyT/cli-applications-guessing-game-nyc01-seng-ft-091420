@@ -1,12 +1,16 @@
 def run_guessing_game
   input = gets.chomp
-  computer_num = rand(1..6)
-  until input == "exit"
+  if input == "exit"
+    puts "Goodbye!"
+  end
+  input
+  computer_num = rand(7)
   if input != computer_num
     puts "Sorry! The computer guessed #{computer_num}."
-      end
-    end
-  if input == "exit"
-      puts "Goodbye!"
-    end
+  end
+  input
+  computer_num = rand(7)
+  if input == computer_num
+      puts "You guessed the correct number!"
+  end
 end
