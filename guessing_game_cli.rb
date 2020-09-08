@@ -1,11 +1,11 @@
 def run_guessing_game
   computer_num = rand(7)
   input = gets.chomp
-  if input == "exit"
-    puts "Goodbye!"
-  elsif input != computer_num.to_s
-    puts "Sorry! The computer guessed #{computer_num}."
-  else
+  if input == computer_num.to_s
     puts "You guessed the correct number!"
+  elsif input == "exit"
+    puts "Goodbye!"
+  elsif
+    puts "Sorry! The computer guessed #{computer_num}."
   end
 end
