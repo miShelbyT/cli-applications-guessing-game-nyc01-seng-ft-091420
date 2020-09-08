@@ -3,6 +3,8 @@ def run_guessing_game
   input = gets.chomp
   if input == "exit"
     puts "Goodbye!"
+  elsif input != "exit"
+    input_num = input.to_i
   end
-  input.to_i == computer_num ? (puts "You guessed the correct number!") : (puts "Sorry! The computer guessed #{computer_num}.")
+  input_num == computer_num ? (puts "You guessed the correct number!") : (puts "Sorry! The computer guessed #{computer_num}.")
 end
